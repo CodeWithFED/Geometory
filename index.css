@@ -5,8 +5,21 @@
 }
 
 body {
-    background: #333;
+    display: flex;
+    flex-direction: column;
+    height: 95vh;
+    background: #2f87d8;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    text-align: center;
+    font-weight: 100;
+    color: #ccc;
 }
 
 h1 {
@@ -20,6 +33,7 @@ h1 {
     flex: 1;
     border: none;
     color: #999;
+    width: 100%;
 }
 
 #btn {
@@ -42,7 +56,7 @@ h1 {
 
 .con {
     display: flex;
-    border: 1px solid dodgerblue;
+    border: 1px solid #fff;
 }
 
 .result {
@@ -51,7 +65,7 @@ h1 {
     text-align: center;
     font-size: 1rem;
     padding: 1rem;
-    margin: 1rem;
+    margin: 1rem 0;
 }
 
 .result__com {

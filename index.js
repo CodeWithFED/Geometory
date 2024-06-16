@@ -9,8 +9,8 @@ function Calculatoin() {
     if (searchbox.value != '') {
         let R = Number(searchbox.value);
         const P = Math.PI;
-        const circumferece = 2 * R * P;
-        const surface = (R ** 2) * P;
+        const circumferece = Math.round(2 * R * P);
+        const surface = Math.round((R ** 2) * P);
         searchbox.value = '';
         resultbox.classList.add('result__com');
         resultbox.innerText = `Circumference= ${circumferece} 
